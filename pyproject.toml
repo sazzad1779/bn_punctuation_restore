@@ -1,0 +1,27 @@
+[project]
+name = "punc-restoration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.9.0",
+    "datasets>=4.0.0",
+    "flair>=0.12.2",
+    "gensim>=4.3.2",
+    "huggingface-hub>=0.33.4",
+    "indic-nlp-library>=0.92",
+    "ipykernel>=6.30.0",
+    "normalizer",
+    "numpy==1.26.4",
+    "pandas>=2.3.1",
+    "scipy==1.11.4",
+    "sentencepiece>=0.2.0",
+    "seqeval>=1.2.2",
+    "textattack>=0.3.10",
+    "torch>=2.7.1",
+    "transformers>=4.53.3",
+]
+
+[tool.uv.sources]
+normalizer = { git = "https://github.com/csebuetnlp/normalizer" }
